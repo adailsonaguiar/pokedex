@@ -1,0 +1,16 @@
+div{
+    align-items: center;
+    justify-content: center;
+    background: #ebf5f0ff;
+    text-align:center;
+}
+.box-body{
+    font-size: 20px;
+    color: #263238ff;
+    font-weight: bold;
+    text-align: center
+}
+
+.user-block{
+    text-align:center;
+}

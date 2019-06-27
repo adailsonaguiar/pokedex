@@ -1,0 +1,12 @@
+<div *ngFor="let pokemon of pokemons" class="col-xs-12 col-sm-6">
+    <a [routerLink]="['/pokeinfo', pokemon.url]">
+        <div class="box-header with-border">
+            <div class="user-block">
+                <img alt="User Image" class="img-circle" src="assets/pokebola.png">
+            </div>
+        </div>
+        <div class="box-body">
+            <p>{{pokemon.name | uppercase}}</p>
+        </div>
+    </a>
+</div>
