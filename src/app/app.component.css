@@ -1,4 +1,5 @@
-.bar {
+.navbar {
+    justify-content: center;
     background: #ef5350ff;
     display: flexbox;
     text-align:center;

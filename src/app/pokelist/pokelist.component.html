@@ -1,14 +1,12 @@
-<div class="wrapper">
-    <div *ngFor="let pokemon of pokemons" class="col-sm-6 col-xs-12">
+<div class="row">
+    <div *ngFor="let pokemon of pokemons" class="col-lg-4 col-md-6 mb-4">
         <a [routerLink]="['/pokeinfo', pokemon.name]">
-            <div class="test">
-                <div class="box-header with-border">
-                    <div class="user-block">
-                        <img alt="User Image" class="img-circle" src="assets/pokebola.png">
-                    </div>
-                </div>
-                <div class="box-body">
-                    <p>{{pokemon.name | uppercase}}</p>
+            <div class="card h-100">
+                <a><img alt="User Image" class="img-circle" src="assets/pokebola.png"></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a>{{pokemon.name | uppercase}}</a>
+                    </h4>
                 </div>
             </div>
         </a>

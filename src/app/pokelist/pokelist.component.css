@@ -1,15 +1,11 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    background: #fff;
-    margin: 10px;
-    text-align: center;
-    justify-content: center;
-  } 
-
-  .test{
+  .card{
       background: #f3f3f3;
-      margin-left: 5px;
-      margin-right: 5px;
+      align-items: center;
+      border-radius: 15%;
+      border-color: rgb(243, 243, 243);
+      border-width: 3px;
+  }
+
+  .row{
+      margin-top: 10px;
   }
