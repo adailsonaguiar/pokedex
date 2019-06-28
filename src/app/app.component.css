@@ -1,6 +1,6 @@
 .bar {
     background: #ef5350ff;
-    display: block;
+    display: flexbox;
     text-align:center;
 }
 .content-wrapper{

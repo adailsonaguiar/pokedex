@@ -1,16 +1,15 @@
-div{
-    align-items: center;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background: #fff;
+    margin: 10px;
+    text-align: center;
     justify-content: center;
-    background: #ebf5f0ff;
-    text-align:center;
-}
-.box-body{
-    font-size: 20px;
-    color: #263238ff;
-    font-weight: bold;
-    text-align: center
-}
+  } 
 
-.user-block{
-    text-align:center;
-}
+  .test{
+      background: #f3f3f3;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
