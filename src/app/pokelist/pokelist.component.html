@@ -1,13 +1,9 @@
 <div class="row">
-    <div *ngFor="let pokemon of pokemons" class="col-lg-4 col-md-6 mb-4">
+    <div *ngFor="let pokemon of pokemons" class="col-xs-1 col-md-3">
         <a [routerLink]="['/pokeinfo', pokemon.name]">
-            <div class="card h-100">
+            <div class="card bg-light mb-3" style="max-width: 12rem;">
                 <a><img alt="User Image" class="img-circle" src="assets/pokebola.png"></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a>{{pokemon.name | uppercase}}</a>
-                    </h4>
-                </div>
+                <div class="card-header">{{pokemon.name | uppercase}}</div>
             </div>
         </a>
     </div>
