@@ -3,7 +3,7 @@
         <a [routerLink]="['/pokeinfo', pokemon.name]">
             <div class="card bg-light mb-3" style="max-width: 12rem;">
                 <a><img alt="User Image" class="img-circle" src={{getUrlImage(i)}}></a>
-                <div class="card-header">{{pokemon.name | uppercase}}</div>
+                <div class="name card-header">{{pokemon.name | uppercase}}</div>
             </div>
         </a>
     </div>
