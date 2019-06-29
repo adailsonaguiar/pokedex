@@ -9,13 +9,18 @@ import { Pokemon } from '../pokelist/pokelist.model'
 })
 export class PokelistComponent {
 
-  pokemons: Pokemon[]
+  pokemons: Pokemon[] = []
 
   constructor(private service: AppService) { }
 
-  ngOnInit() {
-    this.service.pokemonList()
+  async ngOnInit() {
+    await this.service.pokemonList()
       .subscribe(data => this.pokemons = data.results)
+    console.log(this.pokemons.length)
+
   }
 
+  getUrlImage(i: string) {
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i + 1}.png`
+  }
 }

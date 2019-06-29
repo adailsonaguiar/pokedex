@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AppService } from '../app.services';
-import { ActivatedRoute } from '@angular/router'
+import { Component, OnInit } from '@angular/core'
+import { AppService } from '../app.services'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-pokeinfo',
@@ -10,13 +10,17 @@ import { ActivatedRoute } from '@angular/router'
 export class PokeinfoComponent implements OnInit {
 
   info: any
+  name: string
 
   constructor(private service: AppService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute, ) { }
 
   ngOnInit() {
-    console.log(this.route.snapshot.params['url'])
-    this.service.pokemonDetail(this.route.snapshot.params['url'])
+    this.route.params.subscribe((params) => {
+      this.name = params['id']
+    })
+
+    this.service.pokemonDetail(this.name)
       .subscribe(infos => this.info = infos)
   }
 

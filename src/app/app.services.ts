@@ -14,7 +14,8 @@ export class AppService {
         return this.http.get(this.url)
     }
 
-    pokemonDetail(url: string): Observable<any> {
-        return this.http.get(url)
+    pokemonDetail(nome: string): Observable<any> {
+        console.log(this.url + nome)
+        return this.http.get(this.url + nome)
     }
 }
