@@ -13,17 +13,10 @@
         <div class="media text-muted pt-3">
             <img data-src={{info.sprites.front_default}} alt="" class="mr-2 rounded">
             <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <strong class="d-block text-gray-dark">@username</strong>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus.
+                <strong class="d-block text-gray-dark">Types</strong>
             </p>
+            <div class="bg-warning text-white text-center card-body" *ngFor="let type of info.types">
+            <a>{{type.type.name | uppercase}}</a>
         </div>
-        <div class="media text-muted pt-3">
-            <img data-src={{info.sprites.front_shiny}} alt="" class="mr-2 rounded">
-            <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                <strong class="d-block text-gray-dark">@username</strong>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus.
-            </p>
         </div>
     </div>

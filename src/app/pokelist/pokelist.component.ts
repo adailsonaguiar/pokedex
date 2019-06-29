@@ -16,8 +16,6 @@ export class PokelistComponent {
   async ngOnInit() {
     await this.service.pokemonList()
       .subscribe(data => this.pokemons = data.results)
-    console.log(this.pokemons.length)
-
   }
 
   getUrlImage(i: string) {
